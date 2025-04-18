@@ -1,91 +1,79 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color:rgb(240, 240, 243);
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-}
-
-h2 {
-    text-align: center;
-    padding: 20px;
-    background-color: blue;
-    color: rgb(253, 253, 253);
-    margin: 0;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 20px;
-}
-
-form {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
-    border: 1px solid #d5d6d8;
     box-sizing: border-box;
 }
 
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: blue;
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #8b4513;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-form button:hover {
-    background-color: #8389ff;
-}
-
-table {
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-table th, table td {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    border: 2px solid #c5c2c2;
 }
 
-table th {
-    background-color: #8692a5;
-    color: rgb(10, 1, 1);
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-table td a {
-    margin: 0 5px;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #2c2c2c;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #05e73e;
-    border-radius: 4px;
+header p {
+    font-size: 1.2rem;
 }
 
-table td a:hover {
-    background-color: #97f78a;
+/* Section for offers */
+.offers {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-table td a.delete {
-    background-color: #f30606;
+.offers h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #8b4513;
 }
 
-table td a.delete:hover {
-    background-color: #f89896;
+/* Individual offer styling */
+.offer {
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.offer-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.offer-text {
+    padding: 20px;
+    width: 50%;
+}
+
+.offer-text h3 {
+    font-size: 1.8rem;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.offer-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+: 1.2rem;
 }
