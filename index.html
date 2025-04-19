@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion des Étudiants</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="div1">
 
-    <h2>Ajouter un étudiant</h2>
+        <div class="div2">
+          <img src="education.jpeg" alt="image d'éducation">
+        </div>
 
-    <form id="formulaire" method="POST">
-        <input type="hidden" name="id" id="id">
-        <input type="text" name="nomuser" id="nomuser" placeholder="Nom" required>
-        <input type="text" name="prenomuser" id="prenomuser" placeholder="Prénom" required>
-        <input type="email" name="emailuser" id="emailuser" placeholder="Email" required>
-        <input type="number" name="age" id="age" placeholder="Âge" required>
-        <button type="submit" id="btnSubmit">Ajouter</button>
-    </form>
+        <div class="div3">
+            <h2>Inscription à la formation</h2>
+            <form action="enregistrer.php" method="post" id="formulaire">
+                <label>Nom :</label>
+                <input type="text" name="nometud" required>
+                <label>Prénom :</label>
+                <input type="text" name="prenometud" required>
+                <label>Email :</label>
+                <input type="email" name="emailetud" required>
+                <label>Âge :</label>
+                <input type="number" name="age" required>
+                <label>Téléphone :</label>
+                <input type="tel" name="tele" required>
+                <label>Adresse :</label>
+                <textarea name="adressetud" rows="3" required></textarea>
+                <button type="submit">Ajouter</button>
+                <a href="afficher.php" target="_blank">
+                    <button type="button">Afficher les étudiants</button>
+                </a>            
+            </form>
+        </div>
+        <div id="tableauContainer" style="display:none; margin-top: 20px;"></div>
 
-    <h3>Liste des étudiants :</h3>
-    <table id="studentTable" border="1" cellpadding="10">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Email</th>
-                <th>Âge</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
