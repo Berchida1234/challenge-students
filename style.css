@@ -1,79 +1,111 @@
-/* Reset some default styles */
-* {
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and general styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header styles */
-header {
-    background-color: #8b4513;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Section for offers */
-.offers {
-    margin: 20px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-.offers h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #8b4513;
-}
-
-/* Individual offer styling */
-.offer {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f6fa;
     display: flex;
-    margin-bottom: 40px;
-    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;}
+  
+.div1 {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
+  
 
-.offer-image {
-    width: 50%;
-    height: auto;
+.div2 {
+    flex: 1;
+    background-color: #d0e6f7;
+}
+  
+.div2 img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
+}
+  
+.div3 {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+  
+.div3 h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #34495e;
+    font-weight: 500;
+    margin-top: 15px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd6dd;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    transition: 0.3s;
+}
+  
+input:focus, textarea:focus {
+    border-color: #5dade2;
+    outline: none;
+    background-color: #ffffff;
+}
+  
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #5dade2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+button:hover {
+    background-color: #3498db;
 }
 
-.offer-text {
-    padding: 20px;
-    width: 50%;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
 }
 
-.offer-text h3 {
-    font-size: 1.8rem;
-    color: #d4af37;
-    margin-bottom: 10px;
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
 
-.offer-text p {
-    font-size: 1rem;
-    line-height: 1.5;
+th {
+    background-color: #3498db;
+    color: white;
 }
 
-: 1.2rem;
+td {
+    background-color: #f9f9f9;
 }
